@@ -1,0 +1,19 @@
+{
+  "name": "ethtrader-styles",
+  "version": "1.0.0",
+  "description": "The styles and associated image assets for the /r/ethtrader subreddit.",
+  "scripts": {
+    "build": "postcss styles.css > styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthTrader/styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EthTrader/styles/issues"
+  },
+  "homepage": "https://github.com/EthTrader/styles#readme",
+  "devDependencies": {
+    "cssnano": "^3.10.0"
+  }
+}
