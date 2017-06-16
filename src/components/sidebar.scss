@@ -1,0 +1,42 @@
+.side {
+    background-color: lime;
+}
+
+/* "More" links like the submission buttons and "Create your own subreddit" button. */
+.morelink {
+    background-color: red;
+    background-image: none;
+    border: none;
+
+    .nub {
+        display: none;
+    }
+}
+
+/* The box in the sidebar that contains information like
+the subreddit name, subscribe button, and user count. */
+.titlebox {
+    background-color: magenta;
+}
+
+/* The text for the total subscriber count. */
+.subscribers {
+    .word {
+        display: none;
+    }
+
+    .number::after {
+        content: ' hodlers'
+    }
+}
+
+/* The text for the number of users online. */
+.users-online {
+    .word {
+        display: none;
+    }
+
+    .number::after {
+        content: ' hodlers here now'
+    }
+}

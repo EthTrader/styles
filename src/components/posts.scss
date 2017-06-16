@@ -1,0 +1,17 @@
+/* A single post on the front page. */
+.thing {
+    background-color: lemonchiffon;
+}
+
+/* The thumbnail icon that appears next to each post. */
+.thumbnail {
+    /* The thumbnail icon for a text post. */
+    &.self {
+        background-color: cyan;
+    }
+
+    /* The thumbnail icon for an outbound link. */
+    &.outbound {
+        background-color: lime;
+    }
+}

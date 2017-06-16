@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The styles and associated image assets for the /r/ethtrader subreddit.",
   "scripts": {
-    "build": "postcss styles.css > styles.min.css"
+    "build": "node-sass src/main.scss styles.tmp.css && postcss styles.tmp.css > output.min.css && rm styles.tmp.css"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/EthTrader/styles#readme",
   "devDependencies": {
-    "cssnano": "^3.10.0"
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.5.3"
   }
 }
