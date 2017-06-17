@@ -1,17 +1,98 @@
+$thumbnail-size: 70px;
+
+$upvote-empty-asset:  '%%Upvote-Empty%%';
+$upvote-filled-asset: '%%Upvote-Filled%%';
+
+$downvote-empty-asset:  '%%Downvote-Empty%%';
+$downvote-filled-asset: '%%Downvote-Filled%%';
+
+$arrow-width: 20px;
+
 /* A single post on the front page. */
 .thing {
-    background-color: lemonchiffon;
+    background: none;
+    position: relative;
+    margin-left: 30px;
+
+    .title, .title:visited {
+        color: inherit !important;
+    }
+}
+
+.thing:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.thumbnail {
+    border-radius: 3px;
+    width: $thumbnail-size !important;
+    height: $thumbnail-size !important;
+    margin-right: 10px;
+}
+
+.entry {
+    background-color: #222222;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 /* The thumbnail icon that appears next to each post. */
 .thumbnail {
     /* The thumbnail icon for a text post. */
     &.self {
-        background-color: cyan;
+    
     }
 
     /* The thumbnail icon for an outbound link. */
     &.outbound {
-        background-color: lime;
+    
     }
+}
+
+.midcol {
+    width: $arrow-width;
+    margin-right: $margin-medium;
+    overflow: visible;
+    position: relative;
+}
+
+.arrow {
+    background-position: initial !important;
+    width: $arrow-width;
+
+    &.up      { background-image: reddit-image($upvote-empty-asset); }
+    &.upmod   { background-image: reddit-image($upvote-filled-asset); }
+    &.up, &.upmod {
+        height: 22px;
+    }
+    
+    &.down    { background-image: reddit-image($downvote-empty-asset); }
+    &.downmod { background-image: reddit-image($downvote-filled-asset); }
+    &.down, &.downmod {
+        height: 14px;
+        margin-top: -2px;
+    }
+}
+
+.score {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: normal;
+    font-size: 2em;
+    color: $primary-text-color !important;
+}
+
+.link .title {
+    margin-bottom: $margin-small;
+}
+
+.rank {
+    display: none
+}
+
+/* Reddit Enhancement Suite selection */
+body .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+    background-color: black !important;
 }

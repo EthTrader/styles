@@ -1,3 +1,11 @@
 .footer-parent {
-    background-color: orange;
+    background-color: $secondary-background-color;
+}
+
+.debuginfo {
+    background-color: $secondary-background-color;
+}
+
+#hsts_pixel {
+    position: absolute;
 }

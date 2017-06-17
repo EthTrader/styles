@@ -1,14 +1,15 @@
 .side {
-    background-color: lime;
+    background: none;
+    margin: $margin-medium;
 }
 
 /* "More" links like the submission buttons and "Create your own subreddit" button. */
 .morelink {
-    background-color: red;
-    background-image: none;
+    background: none;
     border: none;
 
     .nub {
+        // Hide the default 'end cap' on the morelink buttons.
         display: none;
     }
 }
@@ -16,7 +17,10 @@
 /* The box in the sidebar that contains information like
 the subreddit name, subscribe button, and user count. */
 .titlebox {
-    background-color: magenta;
+    background-color: none;
+    padding: 20px;
+    border-radius: $default-border-radius;
+    border: 1px solid white;
 }
 
 /* The text for the total subscriber count. */
@@ -38,5 +42,20 @@ the subreddit name, subscribe button, and user count. */
 
     .number::after {
         content: ' hodlers here now'
+    }
+}
+
+.subscribe-button {
+    width: 100%;
+    
+    .option.active {
+        background: none;
+        text-transform: capitalize;
+        font-weight: normal;
+        border: 1px solid white;
+        display: block;
+        line-height: 40px;
+        font-size: 1.3em;
+        text-align: center;
     }
 }

@@ -1,3 +1,22 @@
 body {
-    background-color: skyblue;
+    background-color: $background-color;
+
+    color: $primary-text-color;
+    font-family: 'Helvetica', sans-serif;
+}
+
+a {
+    color: $link-color;
+
+    &:visited {
+        color: $link-active-color;
+    }
+
+    &:hover {
+        color: $link-hover-color;
+    }
+
+    &:active {
+        color: $link-active-color;
+    }
 }

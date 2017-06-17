@@ -1,3 +1,13 @@
 #header {
-    background-color: cyan;
+    background-color: $secondary-background-color;
+    height: 200px;
+}
+
+#header-img {
+    display: none !important;
+}
+
+#header-bottom-left {
+    position: absolute;
+    bottom: 0;
 }

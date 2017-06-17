@@ -1,6 +1,10 @@
+@import 'utils';
+
 @import 'base/colors';
 @import 'base/global';
+@import 'base/layout';
 
+@import 'components/content';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/posts';
