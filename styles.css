@@ -6,8 +6,8 @@
 		Base theme last modified on January 20, 2016
 --------------------------------------------------------------------------*/
 
-#header { 
-   background : url(%%homestead%%); 
+#header {
+   background : url(%%homestead%%);
     background-position: top center;
 }
 
@@ -29,7 +29,7 @@ span.pagename.redditname a {
 
 /*HEADER A EXCLUSIVE CODE*/
 /* THIS CODE CENTERS THE TAB MENU*/
- 
+
 #header::after {
     position: absolute;
     top: 160px;
@@ -48,9 +48,9 @@ span.pagename.redditname a {
 	right: 0px;
 	top: 115px;
  }
- 
+
 /*END*/
-	
+
 /*TABMENU*/
 .tabmenu {margin-top: 45px;}
 
@@ -108,7 +108,7 @@ a {
 /*.listing-page .tabmenu li a[href*="/gilded"],*/
 .listing-page .tabmenu li a[href*="/rising"],
 .listing-page .tabmenu li a[href*="/controversial"]
-.listing-page .tabmenu li a[href*="/nsfw"] 
+.listing-page .tabmenu li a[href*="/nsfw"]
 
  {display: none;}
 
@@ -227,13 +227,13 @@ div#RESStyleSheetTipPane-header {border: none !important;}
 	.usertext-edit textarea {transition: 200ms; height: 100px; font-size: 1em; border: 1px solid #ccc;}
 
 
- 
+
 #RESPrefsDropdown {
 	background-color: rgba(0, 0, 0, 0.85) !important;
 	border: none;
 	border-radius: 6px;
  }
- 
+
 .RESDropdownList li {
 	background-color: transparent;
 	color: #fff !important;
@@ -241,8 +241,8 @@ div#RESStyleSheetTipPane-header {border: none !important;}
 	transition: all 0.15s ease;
 	text-transform: uppercase;
  }
- 
-	.RESDropdownList li:hover, 
+
+	.RESDropdownList li:hover,
 	.RESDropdownList li a:hover {
 		background-color: rgba(80, 80, 80, 0.6) !important;
 		color: #fff !important;
@@ -330,7 +330,7 @@ button[disabled] {display:none;}
 
 ul.report-reasons {background-color: transparent; text-transform: uppercase; border: none;}
 
-.content .entry .buttons li.reported-stamp, 
+.content .entry .buttons li.reported-stamp,
 body .content .stickied .entry .buttons li.reported-stamp,
 body .content .over18 .entry .buttons li.reported-stamp {
     border: none !important;
@@ -455,7 +455,7 @@ ul#image-preview-list {
 
 /*SUBREDDIT FONT*/
 .login-form-side input[type="text"], .login-form-side input[type="password"],
-#search input[type="text"], 
+#search input[type="text"],
 .md textarea,
 textarea,
 body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helvetica, Arial, sans-serif;}
@@ -563,7 +563,7 @@ body.res #header-bottom-right #mail.havemail {top: -1px !important;}
     display: inline-block;
     text-indent: -9999px;
 }
-   
+
 
 .message-count {left: 2px; top: -6px; background-color: #ff9400;}
 
@@ -869,7 +869,7 @@ body:not(.search-page) .menuarea {
 	text-decoration: none;
 	font-weight: bold;
 	margin: 0;
-	
+
 }
 
 .res .commentarea .comment a.expand:hover {border-radius: 4px 0px 0px 4px; margin: 0;}/*Trying to fix RES subscribe button position with margin: 0*/
@@ -1009,7 +1009,7 @@ body.comments-page .sitetable {
 	margin: 0 0 8px;
     padding: 16px 16px 1px 16px;
  }
- 
+
 .res .commentarea .thing {padding:15px 15px 0px !important}
 
 .commentarea .thing.collapsed {padding: 10px 15px 10px !important;}
@@ -1347,6 +1347,14 @@ a.author.admin:before {content: "";}
 
 a.author.moderator:after {content: "";}
 
+/*REDDIT REGISTERED USER */
+
+div .thing .tagline .author.is-reg,
+div .thing .tagline .author.moderator.is-reg,
+div .thing .tagline .author.moderator.is-reg:before {
+  color: orange;
+}
+
 /*Body and post appearance*/
 .link {
 	margin-bottom: 0px;
@@ -1466,7 +1474,7 @@ div.score{font-weight:500;color:#999}
 .md p,.md h1{line-height:20px}
 .md ul{line-height:20px}
 h2{color:#252525;font-size:18px;font-weight:400}
- 
+
 /*Linkinfo*/
 
 .side div.score, span.totalvotes {
@@ -1475,7 +1483,7 @@ h2{color:#252525;font-size:18px;font-weight:400}
     font-weight: 500 !important;
     color: #444;
     padding: 0px 16px;
-} 
+}
  .linkinfo .score .number {
 	font-size: 14px;
 	text-align: left;
@@ -1547,10 +1555,10 @@ h2{color:#252525;font-size:18px;font-weight:400}
  }
 
 #header span.pagename.redditname a{
-    -webkit-animation-duration: 1.2s; 
-    -webkit-animation-name: godown; 
-    animation-duration: 1.2s; 
-    animation-name: godown; 
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: godown;
+    animation-duration: 1.2s;
+    animation-name: godown;
 }
 @keyframes godown {
 0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
@@ -1595,9 +1603,9 @@ h2{color:#252525;font-size:18px;font-weight:400}
 
 /*Subscribe+Sidebar Toggles*/
 
-.fancy-toggle-button .add, 
+.fancy-toggle-button .add,
 .fancy-toggle-button .remove {
-    padding: 5px 20px; 
+    padding: 5px 20px;
     border-radius: 20px;
 }
 
@@ -1605,7 +1613,7 @@ h2{color:#252525;font-size:18px;font-weight:400}
 
 .res .fancy-toggle-button .add,
 .res .fancy-toggle-button .remove,
-.fancy-toggle-button .add, 
+.fancy-toggle-button .add,
 .fancy-toggle-button .remove,
 .RESshortcutside,
 .RESDashboardToggle,
@@ -1677,7 +1685,7 @@ h2{color:#252525;font-size:18px;font-weight:400}
 
 
 .comment .flat-list li a:hover,
-.link .entry .buttons li a:hover, 
+.link .entry .buttons li a:hover,
 .link .domain a:hover {
 	font-weight: bold;
 	text-decoration: none;
@@ -1983,7 +1991,7 @@ div.leavemoderator {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /*BOXED SIDEBAR STYLING*/
@@ -2032,7 +2040,7 @@ div.leavemoderator {
 /*SIDEBAR BUTTONS COLORS*/
 
 .fancy-toggle-button .add,
-.RESshortcutside, 
+.RESshortcutside,
 .RESDashboardToggle
 
     {background: #80d04b;}
@@ -2129,7 +2137,7 @@ body.res .RESshortcutside:active,
 
 /*FLAIRS*/
 .flair-redflair[title]:hover {background: #E14169;}
-.flair-purpleflair[title]:hover {background:#6941E1;} 
+.flair-purpleflair[title]:hover {background:#6941E1;}
 .flair-greenflair[title]:hover {background:green;}
 .flair-orangeflair[title]:hover {background: #E16941;}
 .flair-blueflair[title]:hover {background:RoyalBlue;}
@@ -2294,18 +2302,18 @@ body .stickied .thumbnail.self,
 }
 
 /*STICKIED*/
-.stickied a.title:link, 
-.stickied a.title:visited, 
+.stickied a.title:link,
+.stickied a.title:visited,
 body:not(.comments-page) .stickied .link .tagline,
-body:not(.comments-page) .stickied .tagline, 
+body:not(.comments-page) .stickied .tagline,
 body:not(.comments-page) .stickied .entry .buttons li a,
 body:not(.comments-page) .stickied .entry .buttons li + li {color: #2B8B27 !important;}
 
 /*NSFW*/
-.over18 a.title:link, 
-.over18 a.title:visited, 
+.over18 a.title:link,
+.over18 a.title:visited,
 body:not(.comments-page) .over18 .link .tagline,
-body:not(.comments-page) .over18 .tagline, 
+body:not(.comments-page) .over18 .tagline,
 body:not(.comments-page) .over18 .entry .buttons li a,
 body:not(.comments-page) .over18 .entry .buttons li + li {color: #D10023!important;}
 
@@ -2405,16 +2413,16 @@ form#image-upload.image-upload {
 
 
 /*
- 
+
         SUBREDDIT COLOR SCHEME
- 
+
 For aesthetic purposes, please keep everything
-of the same set in one color. 
- 
-The text color for the buttons and backgrounds 
+of the same set in one color.
+
+The text color for the buttons and backgrounds
 is white. Please make sure the chosen background
 color will provide enough contrast with the text
-color. 
+color.
 */
 
 /*SET ONE*/
@@ -2422,22 +2430,22 @@ color.
 		/*DEFAULT COLOR*/
 
         .RESSubscriptionButton, a.expand:hover
-        
+
         {background:RoyalBlue !important;
         position: absolute;
         margin-top: -3px;
         float: left;
         }  /*Fixes RES comment subscribe button */
 
-        
+
 		.RESDashboardToggle.remove,.RESSubscriptionButton,.RESshortcutside.remove,.fancy-toggle-button .remove,.panestack-title a.title-button,.panestack-title a.title-button.gold,.side .titlebox .md h4 a,.sidecontentbox a.helplink,button,.commentarea .comment a.expand:hover
 
 		{background:RoyalBlue}
- 
+
 		.commentarea span.score, .comment .flat-list li a:hover,.comment .flat-list li a[onclick*=reply],.commentNavSortType:hover,.commentarea .menuarea .toggle a:hover,.entry .buttons .may-blank,.error,.link .domain a:hover,.link .entry .buttons li a:hover,.loadFlat:hover,.submit-page .roundfield a,.thing .title,#progressIndicator a#NERStaticLink,.deepthread a,.deepthread::after,.linefield .title
 
 		{color:RoyalBlue}
- 
+
 
 		.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,.usertext-edit textarea:focus,#img-name:focus,.roundfield input[type="url"]:focus,.flairlist .flair-jump input[type="text"]:focus, .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container
 
@@ -2451,7 +2459,7 @@ color.
 		{background:#6687e7}
 
 		/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
- 
+
 		.RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.fancy-toggle-button .remove:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.side .titlebox .md h4 a:active,.sidecontentbox a.helplink:active,button:active
 
 		{background:#27408b}
@@ -2459,13 +2467,13 @@ color.
 /*SET TWO - SECONDARY COLOR*/
 
 		/*DEFAULT*/
- 
+
 		.thing .md table thead tr th,.morelink,.side .titlebox .md h3 a,.tabmenu,.wiki-page-content .md table thead tr th {background:#444}
 
 		/*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
 
 		.morelink:hover,.side .titlebox .md h3 a:hover {background:#666}
- 
+
 		/*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
 
 		.morelink:active, .side .titlebox .md h3 a:active {background: #222;}
@@ -2503,18 +2511,18 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
     transform: scale(.7);*/
 }
 
-.flair-Bitcoin {background-position: -14px -25px; min-width: 24px; text-indent: 30px;} 
-.flair-BitShares {background-position: -14px -56px; min-width: 24px; text-indent: 31px;} 
-.flair-Darkcoin {background-position: -4px -83px; min-width: 40px; text-indent: 46px;} 
-.flair-Dogecoin {background-position: -16px -112px; min-width: 23px; text-indent: 30px;} 
-.flair-Ethereum {background-position: -20px -143px; min-width: 16px; text-indent: 25px;} 
+.flair-Bitcoin {background-position: -14px -25px; min-width: 24px; text-indent: 30px;}
+.flair-BitShares {background-position: -14px -56px; min-width: 24px; text-indent: 31px;}
+.flair-Darkcoin {background-position: -4px -83px; min-width: 40px; text-indent: 46px;}
+.flair-Dogecoin {background-position: -16px -112px; min-width: 23px; text-indent: 30px;}
+.flair-Ethereum {background-position: -20px -143px; min-width: 16px; text-indent: 25px;}
 .flair-ETC {background-position: -20px -171px; min-width: 16px; text-indent: 27px;}
-.flair-Litecoin {background-position: -18px -199px; min-width: 24px; text-indent: 30px;} 
+.flair-Litecoin {background-position: -18px -199px; min-width: 24px; text-indent: 30px;}
 .flair-Lisk {background-position: -20px -228px; min-width: 20px; text-indent: 28px;}
-.flair-Monero {background-position: -18px -256px; min-width: 26px; text-indent: 31px;} 
-.flair-Namecoin {background-position: -18px -285px; min-width: 24px; text-indent: 30px;} 
+.flair-Monero {background-position: -18px -256px; min-width: 26px; text-indent: 31px;}
+.flair-Namecoin {background-position: -18px -285px; min-width: 24px; text-indent: 30px;}
 .flair-Nextcoin {background-position: -18px -314px; min-width: 26px; text-indent: 30px;}
-.flair-Peercoin {background-position: -20px -344px; min-width: 24px; text-indent: 30px;} 
+.flair-Peercoin {background-position: -20px -344px; min-width: 24px; text-indent: 30px;}
 .flair-Ripple {background-position: -21px -372px; min-width: 23px; text-indent: 30px;}
 .flair-NEM {background-position: -20px -404px; min-width: 23px; text-indent: 30px;}
 
@@ -2551,7 +2559,7 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
 .flair-Kraken {background-position: -18px -1548px; min-width: 30px; text-indent: 40px;}
 .flair-Polo {background-position: -15px -1580px; min-width: 32px; text-indent: 42px;}
 
-.flair-Analyst {background-position: -21px -1890px; min-width: 32px; text-indent: 34px;} 
+.flair-Analyst {background-position: -21px -1890px; min-width: 32px; text-indent: 34px;}
 .flair-Altcoiner {background-position: -13px -1919px; min-width: 47px; text-indent: 55px;}
 .flair-Bull {background-position: -14px -1977px; min-width: 39px; text-indent: 45px;}
 .flair-Bear {background-position: -14px -2007px; min-width: 39px; text-indent: 45px;}
@@ -2610,7 +2618,7 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
 /*DAO*/ .side a[href*='https://goo.gl/BwKLfe'] {background:#EE413A; color:white; border-color:white; }
 /*MAKER*/ .side a[href*='https://goo.gl/kBjeaD'] {background:white; color:#6CC5B2; border-color:#85929C; }
 /*DIGIX*/ .side a[href*='https://goo.gl/0LRdtX'] {background:#053B4C; color:white; border-color:#D2953D; }
-/*AUGUR*/ .side a[href*='https://goo.gl/NMgm1p'] {background:white; color:#602A52; border-color:#602A52; } 
+/*AUGUR*/ .side a[href*='https://goo.gl/NMgm1p'] {background:white; color:#602A52; border-color:#602A52; }
 /*MEDIA*/ .side a[href*='https://goo.gl/MABryZ'] {background: black; color: gold; border-color:gold;}
 /*COMEDY*/ .side a[href*='https://goo.gl/FJaQ7E'] {background: black; color: #FE4D86; border-color: #00FFFF /*#EB1D4F*/;  border-width: 1.3px;}
 /*SUPPORT*/ .side a[href*='https://goo.gl/AnnyVy'] {background:white; color:#1E3EEA; border-color:orange;}
@@ -2669,12 +2677,12 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
 		padding: 0px 0px 0px 6px;
 		min-width: 0px;
 		background-color: white;
-		border: 1px 
+		border: 1px
 		solid #dcdcdc;
 		border-radius: 2px;
 		color: #666;
 		font-weight: normal;
-        text-decoration: none; 
+        text-decoration: none;
         z-index: 4;
         margin-bottom: 15px;
         border-radius: 5px;
@@ -2688,9 +2696,9 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
 		color: dark blue;
 		font-weight: bold;
 	}
-	
+
 	.content[role=main], .pretty-form { margin-top: 48px !important;}/*Adjusts position of content element*/
-	
+
 /*Announcement banner hover boxes*/
 	.titlebox h6:nth-of-type(1) [href*="https://bit.ly/2pz3BY5"]:hover:after {
     position: absolute;
@@ -2703,7 +2711,7 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
     margin-left: -240px;
     margin-right: 400;
     margin-top: 16px;
-    font-size: 5; 
+    font-size: 5;
     border-radius: 5px;
     border-color:white;
     content: "Compilation of future and past news on Ethereum events.";
@@ -2720,7 +2728,7 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
     margin-left: -250px;
     margin-right: 630;
     margin-top: 16px;
-    font-size: 5; 
+    font-size: 5;
     border-radius: 5px;
     border-color:white;
     content: 'A list of educational resources on Ethereum: FAQ, ICO safety checklist, etc.';
@@ -2737,7 +2745,7 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
     margin-left: -262px;
     margin-right: 630;
     margin-top: 16px;
-    font-size: 5; 
+    font-size: 5;
     border-radius: 5px;
     border-color:white;
     content: 'Support the Ethereum Foundation through ETH or BTC donations.';
@@ -2777,11 +2785,11 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
 .subscribers .word, .users-online .word{
 display:none;
 }
-.subscribers .number:after { 
+.subscribers .number:after {
 content: " hodlers"
 }
-.users-online .number:after { 
-content: " visitors" 
+.users-online .number:after {
+content: " visitors"
 }
 
 
@@ -2889,7 +2897,7 @@ content: " visitors"
 
 /*Disable Downvotes-Nonsubsriber Message*/
 body:not(.subscriber) .down
-{ 
+{
 visibility: hidden !important;
 }
 
@@ -2917,7 +2925,7 @@ visibility: hidden !important;
     margin-top: -10px; /* Adjust space above icon */
     margin-bottom: -10px; /* Adjust space below icon */
     /* An idea by u/reseph & u/titleproblems */
-}  
+}
 
 /** Generated by ticker bot [start of section] */
 
