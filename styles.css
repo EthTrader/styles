@@ -1996,6 +1996,31 @@ div.leavemoderator {
 
 /*BOXED SIDEBAR STYLING*/
 
+.side .md blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.side .md blockquote + hr {
+  height: 0;
+  margin: 0;
+}
+
+.side .md > blockquote > * {
+  display: none;
+}
+
+.side .md > blockquote > h2 {
+  display: block;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.side .md > blockquote:hover > * {
+    display: block;
+}
+
 .side .md h2 {
     position: relative;
     color: #fff;
@@ -2005,8 +2030,9 @@ div.leavemoderator {
     font-size: 13px!important;
     font-weight: bold;
     background: #444;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 5px 5px 0 0;
+    padding-left: 1rem;
 }
 
 .side .md h2 a {color: #00ffff}
