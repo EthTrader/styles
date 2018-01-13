@@ -2655,40 +2655,52 @@ html[lang="dm"] .linkinfo .shortlink input{background:#444}html[lang="dm"] #site
 /*Flair Filter Button Highlight On Hover*/
 .side a[href^='https://goo.gl/']:hover { text-decoration:none; box-shadow: 0px 0px 10px 0px grey;}
 
- /*Link Flair Tags*/
-.linkflair .linkflairlabel {padding-top: 2px; padding-bottom: 1px; padding-right: 7px; padding-left: 7px; font-size: 10px; border-radius: 10px; }
-.linkflair-technicals .linkflairlabel { background:black; color: #66FF00;  border-color: red;}
-.linkflair-fundamentals .linkflairlabel { background:#F1F4F9; color:#485A70;  border-color: #9D7448;}
-.linkflair-news .linkflairlabel  { background:#78A1D5; color:#070302; border-color: #070302;}
-.linkflair-discussion .linkflairlabel { background:#008000; color:white; border-color: #008000;}
-.linkflair-exchanges .linkflairlabel { background: #04292C; color: #34cbd1; border-color: #A1A3A5; border-width: 1.3px;}
-.linkflair-dapp .linkflairlabel { background:#43443F; color: white; border-color: #43443F;}
-.linkflair-alteth .linkflairlabel  { background:#9094A7; color:white; border-color: #9094A7;}
-.linkflair-innovation .linkflairlabel {background:green; color:yellow; border-color:black;}
-.linkflair-legacy .linkflairlabel  { background-color: #EB9123;color: white; border-color: #EB9123;}
-.linkflair-release .linkflairlabel { background:#13A2DC; color:white; border-color: white;}
-.linkflair-mining .linkflairlabel  { background:white; color: #C38A41; border-color: #C38A41;}
-.linkflair-security .linkflairlabel { background:white; color:#BB5A6A; border-color: #BB5A6A;}
-.linkflair-altcoin .linkflairlabel { background:white; color:#47FF00; border-color: yellow;}
-.linkflair-sentiment .linkflairlabel { background:orange; color:#006301; border-color:red;}
-.linkflair-metrics .linkflairlabel { background:#58F800; color:black; border-color:black;}
-.linkflair-adoption .linkflairlabel { background:#5796D4; color: white; border-color:black;}
-.linkflair-strategy .linkflairlabel { background:#FDFDFD; color:#3E3E3E; border-color:#4DD6FF;}
-.linkflair-educational .linkflairlabel { background:#FFFF01; color:#454343; border-color:#58300C;}
-.linkflair-scam .linkflairlabel { background:#f90205; color:#EEEE00; border-color:black;}
-.linkflair-warning .linkflairlabel { background:#EEEE00; color:#f90205; border-color:black;}
-.linkflair-meta .linkflairlabel { background:#FFFFFF; color:#514E55; border-color:#514E55;}
-.linkflair-misleadclickbait .linkflairlabel  { background:red; color:white; border-color: orange;}
-.linkflair-clickbait .linkflairlabel { background:red; color:white; border-color: orange;}
+
+/*Link Flair Tags*/
+.linkflair .linkflairlabel {padding-top: 2px; padding-bottom: 1px; padding-right: 7px; padding-left: 7px; font-size: 10px; border-radius: 10px; overflow:visible; max-width: none;  }
+.linkflair-TECHNICALS .linkflairlabel { background:black; color: #66FF00;  border-color: red;}
+.linkflair-FUNDAMENTALS .linkflairlabel { background:#F1F4F9; color:#485A70;  border-color: #9D7448;}
+.linkflair-NEWS .linkflairlabel  { background:#78A1D5; color:#070302; border-color: #070302;}
+.linkflair-DISCUSSION .linkflairlabel { background:#008000; color:white; border-color: #008000;}
+.linkflair-EXCHANGE .linkflairlabel { background: #04292C; color: #34cbd1; border-color: #A1A3A5; border-width: 1.3px;}
+.linkflair-DAPP .linkflairlabel { background:#43443F; color: white; border-color: #43443F;}
+.linkflair-ALTETH .linkflairlabel  { background:#9094A7; color:white; border-color: #9094A7;}
+.linkflair-INNOVATION .linkflairlabel {background:green; color:yellow; border-color:black;}
+.linkflair-LEGACY .linkflairlabel  { background-color: #EB9123;color: white; border-color: #EB9123;}
+.linkflair-RELEASE .linkflairlabel { background:#13A2DC; color:white; border-color: white;}
+.linkflair-MINING .linkflairlabel  { background:white; color: #C38A41; border-color: #C38A41;}
+.linkflair-SECURITY .linkflairlabel { background:white; color:#BB5A6A; border-color: #BB5A6A;}
+.linkflair-ALTCOIN .linkflairlabel { background:white; color:#47FF00; border-color: yellow;}
+.linkflair-SENTIMENT .linkflairlabel { background:orange; color:#006301; border-color:red;}
+.linkflair-METRICS .linkflairlabel { background:#58F800; color:black; border-color:black;}
+.linkflair-ADOPTION .linkflairlabel { background:#5796D4; color: white; border-color:black;}
+.linkflair-STRATEGY .linkflairlabel { background:#FDFDFD; color:#3E3E3E; border-color:#4DD6FF;}
+.linkflair-EDUCATIONAL .linkflairlabel { background:#FFFF01; color:#454343; border-color:#58300C;}
+.linkflair-SCAMS .linkflairlabel { background:#f90205; color:#EEEE00; border-color:black;}
+.linkflair-WARNING .linkflairlabel { background:#EEEE00; color:#f90205; border-color:black;}
+.linkflair-META .linkflairlabel { background:#FFFFFF; color:#514E55; border-color:#514E55;}
 .linkflair-unconfirmed .linkflairlabel  {background: red; color:white; border-color: orange;}
-.linkflair-dao .linkflairlabel  {background:#EE413A ; color:white; border-color: white;}
-.linkflair-maker .linkflairlabel  {background:WHITE ; color:#6CC5B2; border-color:#85929C ;}
-.linkflair-digix .linkflairlabel  {background:#053B4C; color:white; border-color:#D2953D ;}
-.linkflair-augur .linkflairlabel  {background:white; color:#602A52; border-color:#602A52 ;}
-.linkflair-media .linkflairlabel  {background: black; color: gold; border-color:gold; }
-.linkflair-comedy .linkflairlabel  {background: black; color: #FE4D86; border-color: #00FFFF /*#EB1D4F*/;  border-width: 1.3px;}
-.linkflair-support .linkflairlabel  {background:white; color:#1E3EEA; border-color:orange;}
-.linkflair-tool .linkflairlabel  {background:#C8C8C8; color:#8F553D; border-color:#C37B17; }
+.linkflair-AUGUR .linkflairlabel  {background:white; color:#602A52; border-color:#602A52 ;}
+.linkflair-MEDIA .linkflairlabel  {background: black; color: gold; border-color:gold; }
+.linkflair-COMEDY .linkflairlabel  {background: black; color: #FE4D86; border-color: #00FFFF /*#EB1D4F*/;  border-width: 1.3px;}
+.linkflair-SUPPORT .linkflairlabel  {background:white; color:#1E3EEA; border-color:orange;}
+.linkflair-TOOL .linkflairlabel  {background:#C8C8C8; color:#8F553D; border-color:#C37B17; }
+.linkflair-DAPP-NEWS .linkflairlabel  { background:#9AC3F7; color: #292524; border-color:#292524;}
+.linkflair-DAPP-RELEASE .linkflairlabel { background:#25C4FE; color: white; border-color: #25C4FE;}
+.linkflair-DAPP-ADOPTION .linkflairlabel { background:#79B8F6; color:white; border-color: black;}
+.linkflair-DAPP-MEDIA .linkflairlabel  {background: black; color: gold; border-color:gold; }
+.linkflair-DAPP-DISCUSSION .linkflairlabel { background:#22A222; color:white; border-color: #22A222;}
+.linkflair-DAPP-RELEASE .linkflairlabel { background:#25C4FE; color: white; border-color: #25C4FE;}
+.linkflair-DAPP-EDUCATIONAL .linkflairlabel { background:#FFFF23; color:#676565; border-color:#7A522E;}
+.linkflair-DAPP-METRICS .linkflairlabel { background:#7AFA22; color:black; border-color:black;}
+.linkflair-DAPP-SENTIMENT .linkflairlabel { background:pink; color:#228523; border-color:maroon;}
+.linkflair-DAPP-STRATEGY .linkflairlabel { background:#FFFFFF; color:#5F5F5F; border-color:#6FF8FF;}
+.linkflair-ERC20-TOKENS .linkflairlabel { background:#3F00FF; color: white; border-color: black;}
+.linkflair-ERC20-STRATEGY .linkflairlabel { background:#FDFDFD; color:#3E3E3E; border-color:#4DD6FF;}
+.linkflair-TOKEN-SECURITY .linkflairlabel { background:white; color:#DD7C8C; border-color: #DD7C8C;}
+.linkflair-TOKEN-WARNING .linkflairlabel { background:#FFFF22; color:#fB2427; border-color:black;}
+.linkflair-TOKEN-SCAMS .linkflairlabel { background:#FB2427; color:#FFFF22; border-color:black;}
+.linkflair-DAPP-TECHNICALS .linkflairlabel { background:black; color: #66FF00;  border-color: red;}
 
 
 
